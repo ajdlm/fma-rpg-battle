@@ -13,6 +13,10 @@ h1, h2, h3, h5 {
     font-family: chunkfive_printregular, serif !important;
 }
 
+h5 {
+    font-size: 1.3vw;
+}
+
 .row {
     min-height: 100px;
 }
@@ -30,6 +34,4 @@ h1, h2, h3, h5 {
 
 #gameplayRow {
     min-height: 0;
-    height: 0;
-    width: 0;
 }
