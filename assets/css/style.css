@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "chunkfive_printregular";
+    src: url("../fonts/chunkfive.print-webfont.woff2") format("woff2"),
+         url("../fonts/chunkfive.print-webfont.woff") format("woff"),
+         url("../fonts/chunkfive.print.ttf") format("truetype");
+}
+
+body {
+    background: black;
+}
+
+h1, h2, h3, h5 {
+    font-family: chunkfive_printregular, serif !important;
+}
+
+.row {
+    min-height: 100px;
+}
+
+.characterCard {
+    max-width: 245px !important;
+    /*max-height: 370px !important;*/
+}
+
+.characterPortrait {
+    /*max-height: 40vh;
+    max-width: 28vh;
+    /*margin: 3vw;*/
+}
+
+#gameplayRow {
+    min-height: 0;
+    height: 0;
+    width: 0;
+}

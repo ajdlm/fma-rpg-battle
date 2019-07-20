@@ -1,0 +1,65 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Fullmetal Alchemist: The RPG Fighting Game</title>
+
+        <script src="assets/javascript/game.js"></script>
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div id="title-div" class="mb-2">
+            <img id="fullmetalTitle" class="d-block mx-auto mt-4 mb-2"
+                src="assets/images/fullmetal-alchemist-title.png" />
+            <h1 class="text-danger text-center">THE RPG FIGHTING GAME</h1>
+        </div>
+
+        <div class="container">
+            <h3 class="text-white text-center mt-4">CHOOSE YOUR CHARACTER</h3>
+
+            <div id="gameplayRow" class="row"></div>
+
+            <div class="row bg-dark mb-4 border border-danger rounded">
+                <div class="col-3">
+                    <div class="card characterCard m-4 border border-danger">
+                        <h5 class="card-title text-center text-danger py-2 mb-0">EDWARD ELRIC</h5>
+
+                        <img id="edPortrait" class="card-img-top border-top border-bottom border-danger
+                            rounded-0 characterPortrait" src="assets/images/edward-elric-portrait.jpg" />
+
+                        <h5 class="card-title text-center text-danger py-2 mb-0">HP: 100</h5>
+                    </div>
+                </div>
+                
+                <div class="col-3">
+                    <div class="card characterCard m-4 border border-danger">
+                        <h5 class="card-title text-center text-danger py-2 mb-0">ROY MUSTANG</h5>
+
+                        <img id="mustangPortrait" class="card-img-top border-top border-bottom border-danger
+                                    rounded-0 characterPortrait" src="assets/images/colonel-mustang-portrait.jpg" />
+
+                        <h5 class="card-title text-center text-danger py-2 mb-0">HP: 120</h5>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <img id="armstrongPortrait" class="characterPortrait"
+                        src="assets/images/major-armstrong-portrait.png" />
+                </div>
+
+                <div class="col-3">
+                    <img id="scarPortrait" class="characterPortrait" src="assets/images/scar-portrait.png" />
+                </div>
+            </div>
+        </div>
+    </body>
