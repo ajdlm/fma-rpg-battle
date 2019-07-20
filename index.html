@@ -5,6 +5,9 @@
         <meta charset="UTF-8">
         <title>Fullmetal Alchemist: The RPG Fighting Game</title>
 
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
         <script src="assets/javascript/game.js"></script>
 
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
@@ -25,13 +28,19 @@
         </div>
 
         <div class="container">
-            <h3 class="text-white text-center mt-4">CHOOSE YOUR CHARACTER</h3>
+            <div id="gameplayRow" class="row">
+                <div id="playerCharacter" class="col-3"></div>
 
-            <div id="gameplayRow" class="row"></div>
+                <div id="battleMessages" class="col-6"></div>
+
+                <div id="defender" class="col-3"></div>
+            </div>
+
+            <h3 id="changingTitle" class="text-white text-center mt-4">CHOOSE YOUR CHARACTER</h3>
 
             <div class="row bg-dark mb-4 border border-danger rounded">
                 <div class="col-3">
-                    <div class="card characterCard m-4 border border-danger">
+                    <div id="edCard" class="card characterCard mx-4 my-4 border border-danger">
                         <h5 class="card-title text-center text-danger py-2 mb-0">EDWARD ELRIC</h5>
 
                         <img id="edPortrait" class="card-img-top border-top border-bottom border-danger
@@ -40,9 +49,9 @@
                         <h5 class="card-title text-center text-danger py-2 mb-0">HP: 100</h5>
                     </div>
                 </div>
-                
+
                 <div class="col-3">
-                    <div class="card characterCard m-4 border border-danger">
+                    <div id="mustangCard" class="card characterCard mx-4 my-4 border border-danger">
                         <h5 class="card-title text-center text-danger py-2 mb-0">ROY MUSTANG</h5>
 
                         <img id="mustangPortrait" class="card-img-top border-top border-bottom border-danger
@@ -53,26 +62,27 @@
                 </div>
 
                 <div class="col-3">
-                        <div class="card characterCard m-4 border border-danger">
-                            <h5 class="card-title text-center text-danger py-2 mb-0">MAJOR ARMSTRONG</h5>
-    
-                            <img id="armstrongPortrait" class="card-img-top border-top border-bottom border-danger
-                                        rounded-0 characterPortrait" src="assets/images/major-armstrong-portrait.png" />
-    
-                            <h5 class="card-title text-center text-danger py-2 mb-0">HP: 150</h5>
-                        </div>
-                    </div>
+                    <div id="armstrongCard" class="card characterCard mx-4 my-4 border border-danger">
+                        <h5 class="card-title text-center text-danger py-2 mb-0">MAJOR ARMSTRONG</h5>
 
-                    <div class="col-3">
-                            <div class="card characterCard m-4 border border-danger">
-                                <h5 class="card-title text-center text-danger py-2 mb-0">SCAR</h5>
-        
-                                <img id="scarPortrait" class="card-img-top border-top border-bottom border-danger
+                        <img id="armstrongPortrait" class="card-img-top border-top border-bottom border-danger
+                                        rounded-0 characterPortrait"
+                            src="assets/images/major-armstrong-portrait.png" />
+
+                        <h5 class="card-title text-center text-danger py-2 mb-0">HP: 150</h5>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div id="scarCard" class="card characterCard mx-4 my-4 border border-danger">
+                        <h5 class="card-title text-center text-danger py-2 mb-0">SCAR</h5>
+
+                        <img id="scarPortrait" class="card-img-top border-top border-bottom border-danger
                                             rounded-0 characterPortrait" src="assets/images/scar-portrait.png" />
-        
-                                <h5 class="card-title text-center text-danger py-2 mb-0">HP: 180</h5>
-                            </div>
-                        </div>
+
+                        <h5 class="card-title text-center text-danger py-2 mb-0">HP: 180</h5>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
