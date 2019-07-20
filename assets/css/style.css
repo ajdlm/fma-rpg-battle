@@ -21,6 +21,10 @@ h5 {
     min-height: 100px;
 }
 
+/*.opacityOnDemand {
+    opacity: .2;
+}*/
+
 .characterCard {
     max-width: 245px !important;
     /*max-height: 370px !important;*/
