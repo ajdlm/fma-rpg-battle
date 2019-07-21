@@ -48,8 +48,8 @@ $(document).ready(function () {
 
         else {
             yourHitPoints = 180;
-            yourBaseAttack = 4;
-            yourCurrentAttack = 4;
+            yourBaseAttack = 6;
+            yourCurrentAttack = 6;
         };
     };
 
@@ -128,7 +128,7 @@ $(document).ready(function () {
         $("#defender").empty();
         $("#attackButton").empty();
         $("#buttonRow").addClass("d-none");
-        $("#battleRow").addClass("w-100 pt-2");
+        $("#battleRow").addClass("w-100 pt-1");
         $("#battleMessages").empty().addClass("text-center").append("<img src='assets/images/" + victoryGifs[x] + "' class='py-4 my-3' style='height: auto; max-width: 30vw;' />").append("<h3 class='text-white align-self-center text-center mx-auto pb-4 mb-3'>Congratulations! You are victorious!</h3>");
     };
 
@@ -136,7 +136,7 @@ $(document).ready(function () {
         if (!noClickingAllowed) {
             defenderHitPoints = defenderHitPoints - yourCurrentAttack;
             $("#" + currentDefender + "HP").text("HP: " + defenderHitPoints);
-            $("#battleMessages").empty().append("<h3 class='text-white text-center py-5 my-5'>You attack " + characterNames[currentDefender] + " for " + yourCurrentAttack + " damage!</h3>");
+            $("#battleMessages").empty().append("<h3 class='text-white text-center pt-5 my-5'>You attack " + characterNames[currentDefender] + " for " + yourCurrentAttack + " damage!</h3>");
             yourCurrentAttack = yourCurrentAttack + yourBaseAttack;
 
             if (defenderHitPoints > 0) {
