@@ -124,30 +124,12 @@ $(document).ready(function () {
         }, 2000);
     };
 
-    function congratulatePlayer(x) {
+    function victory(x) {
         $("#defender").empty();
         $("#attackButton").empty();
         $("#buttonRow").addClass("d-none");
         $("#battleRow").addClass("w-100 pt-2");
-        $("#battleMessages").empty().addClass("text-center").append("<img src=assets/images/" + victoryGifs[yourCharacter] + " class='py-4 my-3' style='height: auto; max-width: 30vw;' />").append("<h3 class='text-white align-self-center text-center mx-auto pb-4 mb-3'>Congratulations! You are victorious!</h3>");
-    };
-
-    function victory() {
-        if (yourCharacter = "ed") {
-            congratulatePlayer("ed");
-        }
-
-        else if (yourCharacter = "mustang") {
-            congratulatePlayer("mustang");
-        }
-
-        else if (yourCharacter = "armstrong") {
-            congratulatePlayer("armstrong");
-        }
-
-        else {
-            congratulatePlayer("scar");
-        };
+        $("#battleMessages").empty().addClass("text-center").append("<img src='assets/images/" + victoryGifs[x] + "' class='py-4 my-3' style='height: auto; max-width: 30vw;' />").append("<h3 class='text-white align-self-center text-center mx-auto pb-4 mb-3'>Congratulations! You are victorious!</h3>");
     };
 
     $("#attackButton").on("click", "#attackDefender", function () {
@@ -175,7 +157,9 @@ $(document).ready(function () {
                 }
 
                 else {
-                    setTimeout(victory, 2000);
+                    setTimeout( function() {
+                        victory(yourCharacter);
+                    }, 2000);
                 };
             };
         }
