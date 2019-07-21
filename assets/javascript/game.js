@@ -17,18 +17,12 @@ $(document).ready(function () {
 
     var scarStats = { hitPoints: 180, attackPower: 4, counterAttackPower: 8 };
 
-    /*assignStats() {
-        if (yourCharacter = "ed") {
-            hitPoints = 
-        }
-    };*/
-
     function initiateGame(x) {
         $("#" + x + "Card").unwrap().removeClass("my-4").addClass("mb-4");
         $("#playerCharacter").append("<h3 class='text-center text-danger mt-4'>Your Character</h3>").append($("#" + x + "Card"));
         $("#changingTitle").text("Enemies Available to Attack").removeClass("text-white").addClass("text-danger");
         $("#battleRow").removeClass("d-none").addClass("w-100");
-        $("#battleMessages").addClass("bg-dark border border-danger rounded my-4 w-100").html("<h3 class='text-center text-white align-self-center mx-auto'>Select an enemy to fight below.</h3>");
+        $("#battleMessages").addClass("bg-dark border border-danger rounded my-4").html("<h3 class='text-white align-self-center text-center mx-auto'>Select an enemy to fight below.</h3>");
         startState = false;
         yourCharacter = x;
         enemyChoice = true;
@@ -40,10 +34,10 @@ $(document).ready(function () {
         currentDefender = x;
         enemyChoice = false;
         battleCommenced = true;
-        $("#wawa").removeClass("d-flex");
-        $("#battleMessages").empty().css("height", "50%").removeClass("d-flex").append("<h3 class='text-white text-center py-5 my-5'>Click on the ATTACK button to attack.</h3>");
+        $("#battleColumn").removeClass("d-flex");//bookmark -->
+        $("#battleMessages").empty().removeClass("d-flex").append("<h3 class='text-white text-center py-5 my-5'>Click on the ATTACK button to attack.</h3>");
         $("#buttonRow").removeClass("d-none").addClass("mt-4 pt-3");
-        $("#attackButton").addClass("pl-0").append("<button type='button' class='btn btn-danger border border-white' style='width: calc(100% - 12px); height: 100px; font-family: chunkfive_printregular; font-size: 2.5vw;'>ATTACK</button>");
+        $("#attackButton").addClass("pl-0").append("<button type='button' class='btn btn-danger border border-white' style='width: calc(100% - 15px); height: 100px; font-family: chunkfive_printregular; font-size: 2.5vw;'>ATTACK</button>");
     };
 
     $("#edCard").click(function () {

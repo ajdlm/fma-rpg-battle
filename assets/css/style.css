@@ -21,21 +21,10 @@ h5 {
     min-height: 100px;
 }
 
-/*.opacityOnDemand {
-    opacity: .2;
-}*/
-
 .characterCard {
     max-width: 245px !important;
-    max-width: 14vw !important;
-    /*max-height: 370px !important;*/
+    max-width: 13vw !important;
 }
-
-/*.characterPortrait {
-    max-height: 40vh;
-    max-width: 28vh;
-    margin: 3vw;
-}*/
 
 #gameplayRow {
     min-height: 0;
