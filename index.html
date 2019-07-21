@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <!--<meta name="viewport" content="width-device-width, initial-scale=1">-->
     </head>
 
     <body>
@@ -28,12 +28,20 @@
         </div>
 
         <div class="container">
-            <div id="gameplayRow" class="row">
+            <div id="gameplayRow" class="row pr-0 ml-1">
                 <div id="playerCharacter" class="col-3"></div>
 
-                <div id="battleMessages" class="col-6 d-flex"></div>
+                <div id="wawa" class="col-6 d-flex pr-0">
+                    <div id="buttonRow" class="row d-none">
+                        <div id="attackButton" class="col-12"></div>
+                    </div>
+                    
+                    <div id="battleRow" class="row d-none">
+                        <div id="battleMessages" class="col-12 d-flex"></div>
+                    </div>
+                </div>
 
-                <div id="defender" class="col-3"></div>
+                <div id="defender" class="col-3 pl-0"></div>
             </div>
 
             <h3 id="changingTitle" class="text-white text-center mt-4">CHOOSE YOUR CHARACTER</h3>
@@ -41,7 +49,7 @@
             <div class="row bg-dark mb-4 border border-danger rounded">
                 <div class="col-3">
                     <div id="edCard" class="card characterCard mx-4 my-4 border border-danger">
-                        <h5 class="card-title text-center text-danger py-2 mb-0">EDWARD ELRIC</h5>
+                        <h5 class="card-title text-center text-danger py-2 mb-0">EDWARD</h5>
 
                         <img id="edPortrait" class="card-img-top border-top border-bottom border-danger
                             rounded-0 characterPortrait" src="assets/images/edward-elric-portrait.jpg" />
@@ -52,7 +60,7 @@
 
                 <div class="col-3">
                     <div id="mustangCard" class="card characterCard mx-4 my-4 border border-danger">
-                        <h5 class="card-title text-center text-danger py-2 mb-0">ROY MUSTANG</h5>
+                        <h5 class="card-title text-center text-danger py-2 mb-0">MUSTANG</h5>
 
                         <img id="mustangPortrait" class="card-img-top border-top border-bottom border-danger
                                     rounded-0 characterPortrait" src="assets/images/colonel-mustang-portrait.jpg" />
@@ -63,7 +71,7 @@
 
                 <div class="col-3">
                     <div id="armstrongCard" class="card characterCard mx-4 my-4 border border-danger">
-                        <h5 class="card-title text-center text-danger py-2 mb-0">MAJOR ARMSTRONG</h5>
+                        <h5 class="card-title text-center text-danger py-2 mb-0">ARMSTRONG</h5>
 
                         <img id="armstrongPortrait" class="card-img-top border-top border-bottom border-danger
                                         rounded-0 characterPortrait"

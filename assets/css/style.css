@@ -27,14 +27,15 @@ h5 {
 
 .characterCard {
     max-width: 245px !important;
+    max-width: 14vw !important;
     /*max-height: 370px !important;*/
 }
 
-.characterPortrait {
-    /*max-height: 40vh;
+/*.characterPortrait {
+    max-height: 40vh;
     max-width: 28vh;
-    /*margin: 3vw;*/
-}
+    margin: 3vw;
+}*/
 
 #gameplayRow {
     min-height: 0;
