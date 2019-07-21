@@ -9,13 +9,13 @@ $(document).ready(function () {
 
     var battleCommenced = false;
 
-    var edStats = { hitPoints: 100, attackPower: 12, counterAttackPower: 32 };
+    var ed = { name: "Edward", hitPoints: 100, attackPower: 12, counterAttackPower: 32 };
 
-    var mustangStats = { hitPoints: 120, attackPower: 8, counterAttackPower: 24 };
+    var mustang = { name: "Mustang", hitPoints: 120, attackPower: 8, counterAttackPower: 24 };
 
-    var armstrongStats = { hitPoints: 150, attackPower: 6, counterAttackPower: 16 };
+    var armstrong = { name: "Armstrong", hitPoints: 150, attackPower: 6, counterAttackPower: 16 };
 
-    var scarStats = { hitPoints: 180, attackPower: 4, counterAttackPower: 8 };
+    var scar = { name: "Scar", hitPoints: 180, attackPower: 4, counterAttackPower: 8 };
 
     function initiateGame(x) {
         $("#" + x + "Card").unwrap().removeClass("my-4").addClass("mb-4");
@@ -30,15 +30,20 @@ $(document).ready(function () {
 
     function chooseEnemy(x) {
         $("#" + x + "Card").unwrap().removeClass("my-4").addClass("mb-4");
-        $("#defender").append("<h3 class='text-center text-danger mt-4'>Defender</h3>").append($("#" + x + "Card"));
+        $("#defender").append("<h3 class='text-center text-danger mt-4 mr-4'>Defender</h3>").append($("#" + x + "Card"));
         currentDefender = x;
         enemyChoice = false;
         battleCommenced = true;
         $("#battleColumn").removeClass("d-flex");//bookmark -->
         $("#battleMessages").empty().removeClass("d-flex").append("<h3 class='text-white text-center py-5 my-5'>Click on the ATTACK button to attack.</h3>");
         $("#buttonRow").removeClass("d-none").addClass("mt-4 pt-3");
-        $("#attackButton").addClass("pl-0").append("<button type='button' class='btn btn-danger border border-white' style='width: calc(100% - 15px); height: 100px; font-family: chunkfive_printregular; font-size: 2.5vw;'>ATTACK</button>");
+        $("#attackButton").addClass("pl-0").append("<button type='button' id='attackDefender' class='btn btn-danger border border-white' style='width: calc(100% - 15px); height: 100px; font-family: chunkfive_printregular; font-size: 2.5vw;'>ATTACK</button>");
     };
+
+    $("#attackButton").on("click", "#attackDefender", function() {
+        alert("Oh wow! You attack " + currentDefender.toUpperCase() + "!")
+        $("#battleMessages").empty().append("<h3 class='text-white text-center py-5 my-5'>You deal " + eval() + " damage to " + window[armstrong].name + "!</h3>");
+    });//THIS IS A PROBLEM
 
     $("#edCard").click(function () {
         if (startState) {
