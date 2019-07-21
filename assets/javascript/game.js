@@ -21,7 +21,11 @@ $(document).ready(function () {
 
     var canClickRestart = false;
 
+    var enemiesLeftToFight = 3;
+
     var characterNames = { ed: "Edward", mustang: "Mustang", armstrong: "Armstrong", scar: "Scar" };
+
+    var victoryGifs = { ed: "edward-elric-victory.gif", mustang: "colonel-mustang-victory.gif", armstrong: "major-armstrong-victory.gif", scar: "scar-victory.gif" };
 
     function assignPlayerStats() {
         if (yourCharacter === "ed") {
@@ -100,8 +104,8 @@ $(document).ready(function () {
         $("#defender").empty();
         $("#attackButton").removeClass("pl-0").empty();
         $("#battleColumn").addClass("d-flex");
-        $("#battleRow").removeClass("d-none").addClass("w-100");
-        $("#battleMessages").addClass("bg-dark border border-danger rounded my-4 d-flex").html("<h3 class='text-white align-self-center text-center mx-auto'>Select an enemy to fight below.</h3>");
+        $("#battleRow").addClass("w-100");
+        $("#battleMessages").addClass("d-flex").html("<h3 class='text-white align-self-center text-center mx-auto'>Select an enemy to fight below.</h3>");
         noClickingAllowed = false;
         enemyChoice = true;
     };
@@ -113,6 +117,35 @@ $(document).ready(function () {
             $("#attackDefender").text("RESTART");
             canClickRestart = true;
         }, 3000);
+    };
+
+    function congratulatePlayer(x) {
+        $("#defender").empty();
+        $("#attackButton").empty();
+        $("#changingTitle").remove();
+        $("#cardStorage").remove();
+        $("#buttonRow").addClass("d-none");
+        //$("#battleColumn").addClass("d-flex");
+        $("#battleRow").addClass("w-100 pt-3");
+        $("#battleMessages").empty().addClass("text-center").append("<img src=assets/images/" + victoryGifs[yourCharacter] + " class='py-4 my-3' style='height: auto; max-width: 30vw;' />").append("<h3 class='text-white align-self-center text-center mx-auto pb-4 mb-3'>Congratulations! You are victorious!</h3>");
+    };
+
+    function victory() {
+        if (yourCharacter = "ed") {
+            congratulatePlayer("ed");
+        }
+
+        else if (yourCharacter = "mustang") {
+            congratulatePlayer("mustang");
+        }
+
+        else if (yourCharacter = "armstrong") {
+            congratulatePlayer("armstrong");
+        }
+
+        else {
+            congratulatePlayer("scar");
+        };
     };
 
     $("#attackButton").on("click", "#attackDefender", function () {
@@ -134,7 +167,14 @@ $(document).ready(function () {
             else {
                 noClickingAllowed = true;
                 $("#battleMessages").empty().append("<h3 class='text-white text-center py-5 my-5'>You defeated " + characterNames[currentDefender] + "!</h3>");
-                setTimeout(defenderDefeated, 3000);
+                enemiesLeftToFight--;
+                if (enemiesLeftToFight > 0) {
+                    setTimeout(defenderDefeated, 3000);                    
+                }
+
+                else {
+                    setTimeout(victory, 3000);
+                };
             };
         }
 

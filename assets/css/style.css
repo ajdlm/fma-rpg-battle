@@ -17,6 +17,10 @@ h5 {
     font-size: 1.3vw;
 }
 
+#gameplayRow {
+    min-height: 0;
+}
+
 .row {
     min-height: 100px;
 }
@@ -24,8 +28,4 @@ h5 {
 .characterCard {
     max-width: 245px !important;
     max-width: 13vw !important;
-}
-
-#gameplayRow {
-    min-height: 0;
 }
