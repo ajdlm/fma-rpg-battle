@@ -126,12 +126,19 @@ $(document).ready(function () {
     };
 
     function victory(x) {
-        $("#defender").empty();
+        $("#defender").empty()
+        $("#victoryButtonRow").removeClass("d-none");
+        $("#victoryButton").addClass("pl-0 mb-4").append("<button type='button' id='restartGame' class='btn btn-danger border border-white' style='width: calc(100% - 15px); height: 100px; font-family: chunkfive_printregular; font-size: 2.5vw;'>RESTART</button>");
         $("#attackButton").empty();
         $("#buttonRow").addClass("d-none");
         $("#battleRow").addClass("w-100 pt-1");
         $("#battleMessages").empty().addClass("text-center").append("<img src='assets/images/" + victoryGifs[x] + "' class='py-4 my-3' style='height: auto; max-width: 30vw;' />").append("<h3 class='text-white align-self-center text-center mx-auto pb-4 mb-3'>Congratulations! You are victorious!</h3>");
+        canClickRestart = true;
     };
+
+    $("#victoryButton").on("click", "#restartGame", function () {
+        location.reload();
+    });
 
     $("#attackButton").on("click", "#attackDefender", function () {
         if (!noClickingAllowed) {
