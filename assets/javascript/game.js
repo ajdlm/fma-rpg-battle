@@ -96,7 +96,7 @@ $(document).ready(function () {
         $("#cardStorage > .col-3 > .characterCard").css("cursor", "default");
         $("#battleColumn").removeClass("d-flex");
         $("#battleMessages").empty().removeClass("d-flex").append("<h3 class='text-white text-center py-5 my-5'>Click on the ATTACK button to attack.</h3>");
-        $("#buttonRow").removeClass("d-none").addClass("mt-4 pt-3");
+        $("#buttonRow").removeClass("d-none").addClass("mt-md-4 pt-3");
         $("#attackButton").addClass("pl-0").append("<button type='button' id='attackDefender' class='btn btn-danger border border-white' style='width: calc(100% - 15px); height: 100px; font-family: chunkfive_printregular; font-size: 2.5vw;'>ATTACK</button>");
         assignDefenderStats();
         if (enemiesLeftToFight === 1) {
@@ -132,7 +132,7 @@ $(document).ready(function () {
         $("#attackButton").empty();
         $("#buttonRow").addClass("d-none");
         $("#battleRow").addClass("w-100 pt-1");
-        $("#battleMessages").empty().addClass("text-center").append("<img src='assets/images/" + victoryGifs[x] + "' class='py-4 my-3' style='height: auto; max-width: 30vw;' />").append("<h3 class='text-white align-self-center text-center mx-auto pb-4 mb-3'>Congratulations! You are victorious!</h3>");
+        $("#battleMessages").empty().addClass("text-center").append("<img src='assets/images/" + victoryGifs[x] + "' class='py-4 my-3 victoryWidth' style='height: auto;' />").append("<h3 class='text-white align-self-center text-center mx-auto pb-4 mb-3'>Congratulations! You are victorious!</h3>");
         canClickRestart = true;
     };
 

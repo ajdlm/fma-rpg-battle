@@ -43,6 +43,10 @@ h5 {
     display: inline-block;
 }
 
+.victoryWidth {
+    max-width: 30vw;
+};
+
 #cardStorage > .col-md-3 > .characterCard {
     cursor: hand;
 }
@@ -94,7 +98,17 @@ cards breaks at 991px and smaller viewport width*/
         max-width: 52.5vw;
     }
 
+    .victoryWidth {
+        max-width: 50vw;
+    }
+
     /*.characterCard {
         max-width: 245px !important;
     }*/
+}
+
+@media screen and (max-width: 640px) {
+    .victoryWidth {
+        max-width: 70vw;
+    }
 }
