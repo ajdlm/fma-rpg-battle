@@ -93,12 +93,12 @@ $(document).ready(function () {
         $("#defender").append("<h3 class='text-danger mt-4'>DEFENDER</h3>").append($("#" + x + "Card"));
         currentDefender = x;
         enemyChoice = false;
+        $("#cardStorage > .col-3 > .characterCard").css("cursor", "default");
         $("#battleColumn").removeClass("d-flex");
         $("#battleMessages").empty().removeClass("d-flex").append("<h3 class='text-white text-center py-5 my-5'>Click on the ATTACK button to attack.</h3>");
         $("#buttonRow").removeClass("d-none").addClass("mt-4 pt-3");
         $("#attackButton").addClass("pl-0").append("<button type='button' id='attackDefender' class='btn btn-danger border border-white' style='width: calc(100% - 15px); height: 100px; font-family: chunkfive_printregular; font-size: 2.5vw;'>ATTACK</button>");
         assignDefenderStats();
-
         if (enemiesLeftToFight === 1) {
             $("#changingTitle").remove();
             $("#cardStorage").remove();
@@ -113,6 +113,7 @@ $(document).ready(function () {
         $("#battleMessages").addClass("d-flex").html("<h3 class='text-white align-self-center text-center mx-auto'>Select an enemy from below to fight.</h3>");
         noClickingAllowed = false;
         enemyChoice = true;
+        $("#cardStorage > .col-3 > .characterCard").css("cursor", "hand");
     };
 
     function gameOver() {

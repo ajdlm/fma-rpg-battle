@@ -42,3 +42,7 @@ h5 {
     max-width: 13vw !important;
     display: inline-block;
 }
+
+#cardStorage > .col-3 > .characterCard {
+    cursor: hand;
+}
