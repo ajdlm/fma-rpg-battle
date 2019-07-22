@@ -40,4 +40,5 @@ h5 {
 .characterCard {
     max-width: 245px !important;
     max-width: 13vw !important;
+    display: inline-block;
 }
