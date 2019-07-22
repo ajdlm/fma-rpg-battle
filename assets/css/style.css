@@ -45,10 +45,10 @@ h5 {
 
 .victoryWidth {
     max-width: 30vw;
-};
+}
 
-#cardStorage > .col-md-3 > .characterCard {
-    cursor: hand;
+#cardStorage > div > .characterCard {
+    cursor: pointer;
 }
 
 /*The relative alignment of the YOU and DEFENDER

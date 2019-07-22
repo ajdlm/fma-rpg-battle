@@ -53,7 +53,6 @@ $(document).ready(function () {
         };
     };
 
-
     function initiateGame(x) {
         $("#" + x + "Card").unwrap().removeClass("my-4").addClass("mb-4");
         $("#playerCharacter").append("<h3 class='text-danger mt-4'>YOU</h3>").append($("#" + x + "Card"));
@@ -93,7 +92,7 @@ $(document).ready(function () {
         $("#defender").append("<h3 class='text-danger mt-4'>DEFENDER</h3>").append($("#" + x + "Card"));
         currentDefender = x;
         enemyChoice = false;
-        $("#cardStorage > .col-3 > .characterCard").css("cursor", "default");
+        $("#cardStorage > div > .characterCard").css("cursor", "default");
         $("#battleColumn").removeClass("d-flex");
         $("#battleMessages").empty().removeClass("d-flex").append("<h3 class='text-white text-center py-5 my-5'>Click on the ATTACK button to attack.</h3>");
         $("#buttonRow").removeClass("d-none").addClass("mt-md-4 pt-3");
@@ -113,7 +112,7 @@ $(document).ready(function () {
         $("#battleMessages").addClass("d-flex").html("<h3 class='text-white align-self-center text-center mx-auto'>Select an enemy from below to fight.</h3>");
         noClickingAllowed = false;
         enemyChoice = true;
-        $("#cardStorage > .col-3 > .characterCard").css("cursor", "hand");
+        $("#cardStorage > div > .characterCard").css("cursor", "hand");
     };
 
     function gameOver() {
