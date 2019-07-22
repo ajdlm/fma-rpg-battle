@@ -99,15 +99,11 @@ cards breaks at 991px and smaller viewport width*/
     }
 
     .victoryWidth {
-        max-width: 50vw;
+        max-width: 55vw;
     }
-
-    /*.characterCard {
-        max-width: 245px !important;
-    }*/
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 600px) {
     .victoryWidth {
         max-width: 70vw;
     }
