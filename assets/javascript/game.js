@@ -59,7 +59,7 @@ $(document).ready(function () {
         $("#playerCharacter").append("<h3 class='text-center text-danger mt-4'>Your Character</h3>").append($("#" + x + "Card"));
         $("#changingTitle").text("Enemies Available to Attack").removeClass("text-white").addClass("text-danger");
         $("#battleRow").removeClass("d-none").addClass("w-100");
-        $("#battleMessages").addClass("bg-dark border border-danger rounded my-4").html("<h3 class='text-white align-self-center text-center mx-auto'>Select an enemy to fight below.</h3>");
+        $("#battleMessages").addClass("bg-dark border border-danger rounded my-4").html("<h3 class='text-white align-self-center text-center mx-auto'>Select an enemy from below to fight.</h3>");
         startState = false;
         yourCharacter = x;
         enemyChoice = true;
@@ -110,7 +110,7 @@ $(document).ready(function () {
         $("#attackButton").removeClass("pl-0").empty();
         $("#battleColumn").addClass("d-flex");
         $("#battleRow").addClass("w-100");
-        $("#battleMessages").addClass("d-flex").html("<h3 class='text-white align-self-center text-center mx-auto'>Select an enemy to fight below.</h3>");
+        $("#battleMessages").addClass("d-flex").html("<h3 class='text-white align-self-center text-center mx-auto'>Select an enemy from below to fight.</h3>");
         noClickingAllowed = false;
         enemyChoice = true;
     };
