@@ -43,25 +43,58 @@ h5 {
     display: inline-block;
 }
 
-#cardStorage > .col-3 > .characterCard {
+#cardStorage > .col-md-3 > .characterCard {
     cursor: hand;
 }
 
+/*The relative alignment of the YOU and DEFENDER
+cards breaks at 991px and smaller viewport width*/
+
 @media screen and (max-width: 980px) {
     h1 {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     h3 {
-        font-size: 2.25vw;
+        font-size: 2.58vw;
     }
 
     #fullmetalTitle {
-        max-width: 37vw;
+        max-width: 43.5vw;
     }
 
     .characterCard {
         max-width: 20vw !important;
         max-width: 300px !important;
     }
+}
+
+@media screen and (max-width: 930px) {
+    h5 {
+        font-size: 1.4vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    h5 {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 4.25vw;    
+    }
+
+    h3 {
+        font-size: 3.13vw;
+    }
+
+    #fullmetalTitle {
+        max-width: 52.5vw;
+    }
+
+    /*.characterCard {
+        max-width: 245px !important;
+    }*/
 }
