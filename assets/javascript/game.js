@@ -112,7 +112,7 @@ $(document).ready(function () {
         $("#battleMessages").addClass("d-flex").html("<h3 class='text-white align-self-center text-center mx-auto'>Select an enemy from below to fight.</h3>");
         noClickingAllowed = false;
         enemyChoice = true;
-        $("#cardStorage > div > .characterCard").css("cursor", "hand");
+        $("#cardStorage > div > .characterCard").css("cursor", "pointer");
     };
 
     function gameOver() {
