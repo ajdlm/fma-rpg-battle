@@ -57,7 +57,7 @@ $(document).ready(function () {
     function initiateGame(x) {
         $("#" + x + "Card").unwrap().removeClass("my-4").addClass("mb-4");
         $("#playerCharacter").append("<h3 class='text-center text-danger mt-4'>Your Character</h3>").append($("#" + x + "Card"));
-        $("#changingTitle").text("Enemies Available to Attack").removeClass("text-white").addClass("text-danger");
+        $("#changingTitle").text("ENEMIES AVAILABLE TO ATTACK").removeClass("text-white").addClass("text-danger");
         $("#battleRow").removeClass("d-none").addClass("w-100");
         $("#battleMessages").addClass("bg-dark border border-danger rounded my-4").html("<h3 class='text-white align-self-center text-center mx-auto'>Select an enemy from below to fight.</h3>");
         startState = false;
