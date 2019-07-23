@@ -112,7 +112,11 @@ h5 {
     #defender {
         padding-left: 0;
     }
-    
+
+    #yourCharacter {
+        padding-left: 0;
+    }
+
     .mobilePadding {
         padding-top: 6vw;
         padding-bottom: 6vw;
