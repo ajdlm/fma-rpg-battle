@@ -109,6 +109,10 @@ h5 {
         max-width: 52.5vw;
     }
 
+    #defender {
+        padding-left: 0;
+    }
+    
     .mobilePadding {
         padding-top: 6vw;
         padding-bottom: 6vw;
