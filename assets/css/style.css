@@ -33,6 +33,10 @@ h5 {
     min-height: 0;
 }
 
+#defender {
+    padding-left: 0;
+}
+
 .row {
     min-height: 100px;
 }
@@ -51,8 +55,11 @@ h5 {
     cursor: pointer;
 }
 
-/*The relative alignment of the YOU and DEFENDER
-cards breaks at 991px and smaller viewport width*/
+@media screen and (max-width: 991px) {
+    #defender {
+        padding-left: 15px;
+    }
+}
 
 @media screen and (max-width: 980px) {
     h1 {
@@ -94,12 +101,40 @@ cards breaks at 991px and smaller viewport width*/
         font-size: 3.13vw;
     }
 
+    h5 {
+        font-size: 2.5vw;
+    }
+
     #fullmetalTitle {
         max-width: 52.5vw;
     }
 
+    .mobilePadding {
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+        margin-top: 8px;
+    }
+
     .victoryWidth {
         max-width: 55vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: 5.1vw;
+    }
+
+    h3 {
+        font-size: 3.75vw;
+    }
+
+    h5 {
+        font-size: 3vw;
+    }
+
+    #fullmetalTitle {
+        max-width: 63vw;
     }
 }
 
