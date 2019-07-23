@@ -33,7 +33,7 @@ h5 {
     min-height: 0;
 }
 
-#defender {
+#defender, #playerCharacter {
     padding-left: 0;
 }
 
@@ -53,12 +53,6 @@ h5 {
 
 #cardStorage > div > .characterCard {
     cursor: pointer;
-}
-
-@media screen and (max-width: 991px) {
-    #defender {
-        padding-left: 15px;
-    }
 }
 
 @media screen and (max-width: 980px) {
@@ -107,14 +101,6 @@ h5 {
 
     #fullmetalTitle {
         max-width: 52.5vw;
-    }
-
-    #defender {
-        padding-left: 0;
-    }
-
-    #playerCharacter {
-        padding-left: 0;
     }
 
     .mobilePadding {

@@ -29,15 +29,15 @@ $(document).ready(function () {
 
     function assignPlayerStats() {
         if (yourCharacter === "ed") {
-            yourHitPoints = 100;
-            yourBaseAttack = 12;
-            yourCurrentAttack = 12;
-        }
-
-        else if (yourCharacter === "mustang") {
             yourHitPoints = 120;
             yourBaseAttack = 8;
             yourCurrentAttack = 8;
+        }
+
+        else if (yourCharacter === "mustang") {
+            yourHitPoints = 100;
+            yourBaseAttack = 12;
+            yourCurrentAttack = 12;
         }
 
         else if (yourCharacter === "armstrong") {
@@ -67,13 +67,13 @@ $(document).ready(function () {
 
     function assignDefenderStats() {
         if (currentDefender === "ed") {
-            defenderHitPoints = 100;
-            defenderCounterPower = 32;
+            defenderHitPoints = 120;
+            defenderCounterPower = 24;
         }
 
         else if (currentDefender === "mustang") {
-            defenderHitPoints = 120;
-            defenderCounterPower = 24;
+            defenderHitPoints = 100;
+            defenderCounterPower = 32;
         }
 
         else if (currentDefender === "armstrong") {
