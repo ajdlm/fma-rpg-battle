@@ -1,4 +1,4 @@
-# **![#f03c15]Fullmetal Alchemist: The RPG Battle Game**
+# Fullmetal Alchemist: The RPG Battle Game
 
 A simple RPG-style fighting game that pits one character against three others.
 
