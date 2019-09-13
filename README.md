@@ -2,7 +2,7 @@
 
 A simple RPG-style fighting game that pits one character against three others.
 
-Deployed application at https://ajdlm.github.io/fma-rpg-battle/.
+Deployed game at https://ajdlm.github.io/fma-rpg-battle/.
 
 ## How to Play
 
