@@ -2,6 +2,8 @@
 
 A simple RPG-style fighting game that pits one character against three others.
 
+Deployed application at https://ajdlm.github.io/fma-rpg-battle/.
+
 ## How to Play
 
 * Start by clicking on a character. This will become your avatar for the rest of the game.
