@@ -1,31 +1,31 @@
 $(document).ready(function () {
-    var startState = true;
+    let startState = true;
 
-    var yourCharacter = "";
+    let yourCharacter = "";
 
-    var yourHitPoints = 0;
+    let yourHitPoints = 0;
 
-    var yourBaseAttack = 0;
+    let yourBaseAttack = 0;
 
-    var yourCurrentAttack = 0;
+    let yourCurrentAttack = 0;
 
-    var currentDefender = "";
+    let currentDefender = "";
 
-    var defenderHitPoints = 0;
+    let defenderHitPoints = 0;
 
-    var defenderCounterPower = 0;
+    let defenderCounterPower = 0;
 
-    var enemyChoice = false;
+    let enemyChoice = false;
 
-    var noClickingAllowed = false;
+    let noClickingAllowed = false;
 
-    var canClickRestart = false;
+    let canClickRestart = false;
 
-    var enemiesLeftToFight = 3;
+    let enemiesLeftToFight = 3;
 
-    var characterNames = { ed: "Edward", mustang: "Mustang", armstrong: "Armstrong", scar: "Scar" };
+    const characterNames = { ed: "Edward", mustang: "Mustang", armstrong: "Armstrong", scar: "Scar" };
 
-    var victoryGifs = { ed: "edward-elric-victory.gif", mustang: "colonel-mustang-victory.gif", armstrong: "major-armstrong-victory.gif", scar: "scar-victory.gif" };
+    const victoryGifs = { ed: "edward-elric-victory.gif", mustang: "colonel-mustang-victory.gif", armstrong: "major-armstrong-victory.gif", scar: "scar-victory.gif" };
 
     function assignPlayerStats() {
         if (yourCharacter === "ed") {
