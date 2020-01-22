@@ -137,3 +137,12 @@ h5 {
         max-width: 70vw;
     }
 }
+
+
+@media screen and (max-width: 575px) {
+    #cardStorage {
+        border-left: none !important;
+        border-right: none !important;
+        border-radius: 0 !important;
+    }
+}
