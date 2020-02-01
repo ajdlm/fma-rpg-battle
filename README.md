@@ -29,3 +29,7 @@ Deployed game at https://ajdlm.github.io/fma-rpg-battle/.
 * An observant player will keep track of which enemies do how much damage and adjust their strategy on subsequent playthroughs.
 
 * Enemies with higher HP values will tend to do more damage on attacks and counterattacks.
+
+## Author
+
+Antonio de las Morenas -- responsible for coding the game
