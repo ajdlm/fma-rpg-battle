@@ -1,148 +1,170 @@
 @font-face {
-    font-family: "chunkfive_printregular";
-    src: url("../fonts/chunkfive.print-webfont.woff2") format("woff2"),
-         url("../fonts/chunkfive.print-webfont.woff") format("woff"),
-         url("../fonts/chunkfive.print.ttf") format("truetype");
+  font-family: "chunkfive_printregular";
+  src: url("../fonts/chunkfive.print-webfont.woff2") format("woff2"),
+    url("../fonts/chunkfive.print-webfont.woff") format("woff"),
+    url("../fonts/chunkfive.print.ttf") format("truetype");
 }
 
 body {
-    background: black;
+  background: black;
 }
 
-h1, h3, h5 {
-    font-family: chunkfive_printregular, serif !important;
+h1,
+h3,
+h5 {
+  font-family: chunkfive_printregular, serif !important;
 }
 
 h1 {
-    font-size: 2.75vw;
+  font-size: 2.75vw;
 }
 
 h3 {
-    font-size: 2vw;
+  font-size: 2vw;
 }
 
 h5 {
-    font-size: 1.3vw;
+  font-size: 1.3vw;
 }
 
 #fullmetalTitle {
-    max-width: 34vw;
+  max-width: 34vw;
 }
 
 #gameplayRow {
-    min-height: 0;
+  min-height: 0;
 }
 
-#defender, #playerCharacter {
-    padding-left: 0;
+#defender,
+#playerCharacter {
+  padding-left: 0;
 }
 
 .row {
-    min-height: 100px;
+  min-height: 100px;
 }
 
 .characterCard {
-    max-width: 245px !important;
-    max-width: 13vw !important;
-    display: inline-block;
+  max-width: 245px !important;
+  max-width: 13vw !important;
+  display: inline-block;
 }
 
 .victoryWidth {
-    max-width: 30vw;
+  max-width: 30vw;
 }
 
 #cardStorage > div > .characterCard {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 2200px) {
+  h3 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  h5 {
+    font-size: 26px;
+  }
+
+  #attackDefender {
+    font-size: 50px !important;
+  }
 }
 
 @media screen and (max-width: 980px) {
-    h1 {
-        font-size: 3.5vw;
-    }
+  h1 {
+    font-size: 3.5vw;
+  }
 
-    h3 {
-        font-size: 2.58vw;
-    }
+  h3 {
+    font-size: 2.58vw;
+  }
 
-    #fullmetalTitle {
-        max-width: 43.5vw;
-    }
+  #fullmetalTitle {
+    max-width: 43.5vw;
+  }
 
-    .characterCard {
-        max-width: 20vw !important;
-        max-width: 300px !important;
-    }
+  .characterCard {
+    max-width: 20vw !important;
+    max-width: 300px !important;
+  }
 }
 
 @media screen and (max-width: 930px) {
-    h5 {
-        font-size: 1.4vw;
-    }
+  h5 {
+    font-size: 1.4vw;
+  }
 }
 
 @media screen and (max-width: 850px) {
-    h5 {
-        font-size: 1.5vw;
-    }
+  h5 {
+    font-size: 1.5vw;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    h1 {
-        font-size: 4.25vw;    
-    }
+  h1 {
+    font-size: 4.25vw;
+  }
 
-    h3 {
-        font-size: 3.13vw;
-    }
+  h3 {
+    font-size: 3.13vw;
+  }
 
-    h5 {
-        font-size: 2.5vw;
-    }
+  h5 {
+    font-size: 2.5vw;
+  }
 
-    #fullmetalTitle {
-        max-width: 52.5vw;
-    }
+  #fullmetalTitle {
+    max-width: 52.5vw;
+  }
 
-    .mobilePadding {
-        padding-top: 6vw;
-        padding-bottom: 6vw;
-        margin-top: 8px;
-    }
+  .mobilePadding {
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+    margin-top: 8px;
+  }
 
-    .victoryWidth {
-        max-width: 55vw;
-    }
+  .victoryWidth {
+    max-width: 55vw;
+  }
 }
 
 @media screen and (max-width: 640px) {
-    h1 {
-        font-size: 5.1vw;
-    }
+  h1 {
+    font-size: 5.1vw;
+  }
 
-    h3 {
-        font-size: 3.75vw;
-    }
+  h3 {
+    font-size: 3.75vw;
+  }
 
-    h5 {
-        font-size: 3vw;
-    }
+  h5 {
+    font-size: 3vw;
+  }
 
-    #fullmetalTitle {
-        max-width: 63vw;
-    }
+  #fullmetalTitle {
+    max-width: 63vw;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .victoryWidth {
-        max-width: 70vw;
-    }
+  .victoryWidth {
+    max-width: 70vw;
+  }
 }
 
-
 @media screen and (max-width: 575px) {
-    #cardStorage {
-        border-left: none !important;
-        border-right: none !important;
-        border-radius: 0 !important;
-    }
+  #cardStorage {
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+  }
 }
